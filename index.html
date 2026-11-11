@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Практическая работа #3</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <div class="header__brand">
+          <button class="icon-button" type="button" aria-label="Открыть меню">
+            <img src="/src/assets/svg/burger.svg" alt="" width="40" height="40" />
+          </button>
+          <span class="header__divider" aria-hidden="true"></span>
+          <a class="header__logo" href="#" aria-label="CPS — главная">
+            <img src="/src/assets/svg/logo.svg" alt="CPS" width="98" height="52" />
+          </a>
+        </div>
+
+        <div class="header__actions">
+          <div class="header__contacts">
+            <a class="icon-button" href="tel:+79149999999" aria-label="Позвонить">
+              <img src="/src/assets/svg/call.svg" alt="" width="40" height="40" />
+            </a>
+            <a class="icon-button" href="#" aria-label="Написать сообщение">
+              <img src="/src/assets/svg/chat.svg" alt="" width="40" height="40" />
+            </a>
+            <a class="icon-button" href="#" aria-label="Профиль">
+              <img src="/src/assets/svg/profile.svg" alt="" width="40" height="40" />
+            </a>
+          </div>
+
+          <span class="header__divider header__divider--actions" aria-hidden="true"></span>
+
+          <div class="header__tools">
+            <a class="icon-button" href="#" aria-label="Ремонт и обслуживание">
+              <img src="/src/assets/svg/repair.svg" alt="" width="40" height="40" />
+            </a>
+            <a class="icon-button" href="#" aria-label="Проверить статус">
+              <img src="/src/assets/svg/checkstatus.svg" alt="" width="40" height="40" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Услуги и сервисы</h1>
+
+          <div class="tabs" role="tablist">
+            <button class="tabs__btn tabs__btn--active" type="button" role="tab">
+              Ремонтируемые устройства
+            </button>
+            <button class="tabs__btn" type="button" role="tab">Дополнительные услуги</button>
+            <button class="tabs__btn" type="button" role="tab">Цены на услуги</button>
+            <button class="tabs__btn" type="button" role="tab">Адреса сервисных центров</button>
+            <button class="tabs__btn" type="button" role="tab">Специальные цены</button>
+            <button class="tabs__btn" type="button" role="tab">Отзывы клиентов</button>
+          </div>
+
+          <div class="article">
+            <div class="article__content">
+              <p class="article__text">
+                Мы являемся авторизованным сервисным центром по ремонту техники
+                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+                официальной гарантией производителя.
+              </p>
+              <p class="article__text article__text--extra">
+                Мы успешно работаем с 1992 года и заслужили репутацию надежного
+                партнера, что подтверждает большое количество постоянных
+                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
+                и, в свою очередь, советуют нас родным и близким.
+              </p>
+              <button class="article__more" type="button" aria-expanded="false">
+                <svg class="article__more-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true" focusable="false">
+                  <path d="M3 4.5L9 9.5L15 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M3 9.5L9 14.5L15 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span>Читать далее</span>
+              </button>
+            </div>
+
+            <img class="article__img" src="/src/assets/img/cps-sign.png" alt="Вывеска CPS" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+@use "../variables" as *;
+
+.tabs {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &__btn {
+    flex-shrink: 0;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background: transparent;
+    font-family: inherit;
+    font-size: 1rem;
+    color: $color-muted;
+    cursor: pointer;
+    transition: color 0.2s ease, border-color 0.2s ease;
+
+    &:hover {
+      color: $color-text;
+    }
+
+    &--active {
+      border-color: $color-accent;
+      background-color: $color-bg;
+      color: $color-text;
+    }
+  }
+}

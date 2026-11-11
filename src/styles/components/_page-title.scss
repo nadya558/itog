@@ -1,0 +1,29 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.hero {
+  padding: 28px 0 48px;
+
+  &__title {
+    position: relative;
+    margin: 0 0 24px;
+    font-size: 1.625rem;
+    font-weight: 700;
+    line-height: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -17px;
+      width: 4px;
+      height: 40px;
+      border-radius: 0 16px 16px 0;
+      background-color: $color-accent;
+    }
+
+    @include tablet {
+      font-size: 1.875rem;
+    }
+  }
+}

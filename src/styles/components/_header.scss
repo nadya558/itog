@@ -1,0 +1,66 @@
+@use "../variables" as *;
+@use "../mixins" as *;
+
+.header {
+  height: 84px;
+  background: $color-bg;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__brand,
+  &__actions,
+  &__contacts,
+  &__tools {
+    display: flex;
+    align-items: center;
+  }
+
+  &__brand,
+  &__actions {
+    gap: 16px;
+  }
+
+  &__contacts,
+  &__tools {
+    gap: 16px;
+  }
+
+  &__logo,
+  &__logo img {
+    display: block;
+    width: 98px;
+    height: 52px;
+  }
+
+  &__divider {
+    width: 1px;
+    height: 32px;
+    background: $color-line;
+  }
+
+  &__contacts,
+  &__divider--actions {
+    display: none;
+  }
+
+  @include tablet {
+    &__brand,
+    &__actions {
+      gap: 20px;
+    }
+
+    &__contacts {
+      display: flex;
+    }
+
+    &__divider--actions {
+      display: block;
+    }
+  }
+}
